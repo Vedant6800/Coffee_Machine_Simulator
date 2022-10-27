@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String Args[]) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int ch = 0, ch2 = 0, fillch = 0, fillexit = 0, exit = 0, coffeePowder =0, water = 0, milk = 0,sugar = 0,  cup=0, add=0, qty = 0;
+        int ch = 0, ch2 = 0, fillch = 0, fillexit = 0, exit = 0, coffeePowder =250, water = 1000, milk = 1000,sugar = 250,  cup=10, add=0, qty = 0, coffee_price = 20, latte_price = 85, cappuccino_price = 70, espresso_price = 90;
 
         while (exit == 0) {
             fillexit = 0;
@@ -54,6 +54,9 @@ public class Main {
                                     milk -= (20*qty);
                                     cup -= (1*qty);
                                     sugar -= (20*qty);
+                                    System.out.println("\n\n\n****************Bill****************");
+                                    System.out.println("Beverage\tRate\tQuantity\t  total");
+                                    System.out.println("Coffee  \t"+coffee_price+"\t"+qty+"\t\t"+(qty*coffee_price));
                                     System.out.println("\n\n\n**********ENJOY YOUR DRINK**********\n\n\n");
                                 }
                                 else
@@ -85,6 +88,9 @@ public class Main {
                                     milk -= (90*qty);
                                     cup -= (1*qty);
                                     sugar -= (20*qty);
+                                    System.out.println("\n\n\n****************Bill****************");
+                                    System.out.println("Beverage\tRate\tQuantity\t  total");
+                                    System.out.println("Coffee  \t"+latte_price+"\t"+qty+"\t\t"+(qty*latte_price));
                                     System.out.println("\n\n\n**********ENJOY YOUR DRINK**********\n\n\n");
                                 }
                                 else
@@ -115,6 +121,9 @@ public class Main {
                                     water -= (30*qty);
                                     milk -= (90*qty);
                                     cup -=( 1*qty);
+                                    System.out.println("\n\n\n****************Bill****************");
+                                    System.out.println("Beverage\tRate\tQuantity\t  total");
+                                    System.out.println("Coffee  \t"+cappuccino_price+"\t"+qty+"\t\t"+(qty*cappuccino_price));
                                     System.out.println("\n\n\n**********ENJOY YOUR DRINK**********\n\n\n");
                                 }
                                 else
@@ -146,6 +155,9 @@ public class Main {
                                     milk -= (40*qty);
                                     sugar -= (20*qty);
                                     cup -=( 1*qty);
+                                    System.out.println("\n\n\n****************Bill****************");
+                                    System.out.println("Beverage\tRate\tQuantity\t  total");
+                                    System.out.println("Coffee  \t"+espresso_price+"\t"+qty+"\t\t"+(qty*espresso_price));
                                     System.out.println("\n\n\n**********ENJOY YOUR DRINK**********\n\n\n");
                                 }
                                 else
